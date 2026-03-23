@@ -13,6 +13,15 @@
 - 참가자는 주어진 원시 무역 데이터를 분석하여 품목 간 선후행 관계가 존재하는 공행성 쌍(A → B)을 찾고,
 - 이후에는 선행 품목(A)의 흐름을 활용해 후행 품목(B)의 다음달의 총 무역량(value)을 예측해야 합니다.
 
+## 2. 기술 스택 (Tech Stack)
+| 구분 | 기술 |
+|------|------|
+| Language | Python |
+| Data Processing | Pandas, NumPy |
+| Analysis | Scikit-learn |
+| Visualization | Matplotlib, Seaborn |
+| Environment | Google Colab |
+
 ## 2. Pipeline
 1. import / 데이터 로딩
 2. Preprocessing (전처리)
@@ -25,7 +34,16 @@
 6. 공행성 후보 선정 및 공행성 쌍 데이터 탐색
 7. 다음 후행 무역량 예측
 
-## 3. 결과 (Key Results)
+## 3. 🚀 Key Results (핵심 성과)
 
-## 4. 기술 스택
+## 4. 분석 프로세스 (Workflow)
+1. **Data Cleaning**: 품목별 시계열 데이터 결측치 보간 및 정규화.
+2. **Feature Engineering**: 선행 지표 도출 및 시계열 래그(Lag) 변수 생성.
+3. **Statistical Testing**: 품목 쌍별 Granger Causality 검정 수행.
+4. **Model Training**: 앙상블 모델을 활용한 차월 무역량 회귀 분석.
+5. **Evaluation**: 검증 데이터셋을 활용한 오차 분석 및 하이퍼파라미터 최적화.
+
+## 5. 기대 효과 및 활용 방안
+* **공급망 관리**: 수입량 급감/급증에 대한 선행 지표를 확보하여 리스크 사전 대응 가능.
+* **재고 최적화**: 후행 품목의 수요 예측 정확도를 높여 물류 비용 절감에 기여.
 
